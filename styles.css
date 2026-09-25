@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: blue;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #ddd;
+  color: #222;
+}
+
+.hero-box {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-box h3 {
+  margin-top: 0;
+}
+
+.box-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.bar-group {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  background: blue;
+  border-radius: 4px 4px 0 0;
+}
+
+.bar1 { height: 30%; }
+.bar2 { height: 50%; }
+.bar3 { height: 70%; }
+.bar4 { height: 100%; }
+
+.features,
+.about {
+  padding: 30px 0;
+}
+
+.features h2,
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.feature-box h3 {
+  margin-top: 0;
+}
+
+.about ul {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav,
+  .hero,
+  .feature-grid {
+    display: block;
+  }
+
+  nav {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .buttons {
+    display: block;
+  }
+
+  .btn {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
